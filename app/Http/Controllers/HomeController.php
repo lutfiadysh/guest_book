@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
+
 class HomeController extends Controller
 {
     /**
@@ -26,11 +28,11 @@ class HomeController extends Controller
         if ($userRole == "kesiswaaan") {
             return view('admin.home');
         } else if($userRole == "guru") {
-            return view('siswa.index');
+            return view('guru.index');
         } else  if ($userRole == "pembimbing"){
             return view('pembimbing.index');
         } else if ($userRole == 'siswa'){
-            return view('operator.index');
+            return view('siswa.index');
         }
     }
 }
