@@ -1,22 +1,45 @@
-@extends('layouts.app', ['class' => 'bg-default'])
+@extends('layouts.app', ['class' => 'bg-gradient-info'])
 
 @section('content')
-    <div class="header bg-gradient-primary py-7 py-lg-8">
+    <div class="bg-gradient-info">
         <div class="container">
-            <div class="header-body text-center mt-7 mb-7">
-                <div class="row justify-content-center">
-                    <div class="col-lg-5 col-md-6">
-                        <h1 class="text-white">{{ __('Welcome to Argon Dashboard FREE Laravel Live Preview.') }}</h1>
+            <div class="row justify-content-center">
+                <div class="card col-10 shadow mt-7">
+                    <div class="card-header text-center">
+                        <h1 class="mb-0">Guest Book</h1>
+                        <h2 class="mb-0">" In situ Hotel "</h2>
+                    </div>
+                    <div class="card-body mt-2">
+                        <form action="{{route('testi.store')}}" method="POST">
+                            @csrf
+                            <div class="form-group form-group-alternative">
+                                <label for="room">Room Number</label>
+                                <input type="text" name="r_number" class="form-control form-control-alternative" id="room">
+                            </div>
+                            <div class="form-group form-group-alternative">
+                                <label for="">Your Name</label>
+                                <input type="text" name="name" class="form-control form-control-alternative">
+                            </div>
+                            <div class="form-group form-group-alternative">
+                                <label for="">Phone</label>
+                                <input type="text" name="phone" class="form-control form-control-alternative">
+                            </div>
+                            <div class="form-group form-group-alternative">
+                                <label for="">Email</label>
+                                <input type="email" name="email" class="form-control form-control-alternative">
+                            </div>
+                            <div class="form-group form-group-alternative">
+                                <label for="">Testimoni</label>
+                                <textarea name="testimoni" id="" cols="30" rows="10" class="form-control form-control-alternative"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control form-control-alternative btn btn-danger">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="separator separator-bottom separator-skew zindex-100">
-            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
-            </svg>
-        </div>
     </div>
 
-    <div class="container mt--10 pb-5"></div>
 @endsection

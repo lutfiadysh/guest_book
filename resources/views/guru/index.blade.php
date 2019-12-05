@@ -6,12 +6,12 @@
     <div class="container-fluid mt--7">  
         <div class="row mt-5">
             <div class="col-xl-12 mb-5 mb-xl-0">
-                <div class="card">
+                <div class="card shadow">
                     <div class="card-header border-0">
-                        <h3>Selamat Datang!</h3>
+                        <h3 class="mb-0">Selamat Datang!</h3>
                     </div>
-                    <div class="card-body">
-                        <span class="text-success">{{Auth::user()->name}}</span>
+                    <div class="card-body mt--4">
+                        <span class="text-primary">{{Auth::user()->name}}</span>
                     </div>
                 </div>
             </div>
