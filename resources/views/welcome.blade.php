@@ -40,6 +40,10 @@
                                     <input type="email" name="email" class="form-control form-control-alternative" placeholder="name@example.com">
                                 </div>
                             </div>
+                            <div class="form-group form-group-alternative ">
+                                <label for="">Instansi</label>
+                                <input type="text" name="instansi" class="form-control form-control-alternative" placeholder="Asal instansi">
+                            </div>
                             <div class="form-group form-group-alternative">
                                 <label for="">Testimoni</label>
                                 <textarea name="testimoni" id="" cols="10" rows="8" class="form-control form-control-alternative" required></textarea>

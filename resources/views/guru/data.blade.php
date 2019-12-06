@@ -32,6 +32,7 @@
                                             <thead>
                                                 <th>#</th>
                                                 <th>No Ruangan</th>
+                                                <th>Instansi</th>
                                                 <th>Nama</th>
                                                 <th>Phone</th>
                                                 <th>Email</th>
@@ -42,6 +43,7 @@
                                                 <tr>
                                                     <td>{{$loop->iteration}}</td>
                                                     <td>{{$t->r_number}}</td>
+                                                    <td>{{$t->instansi}}</td>
                                                     <td>{{$t->name}}</td>
                                                     <td>{{$t->phone}}</td>
                                                     <td>{{$t->email}}</td>
@@ -58,6 +60,7 @@
                                             <thead>
                                                 <th>#</th>
                                                 <th>No Ruangan</th>
+                                                <th>Instansi</th>
                                                 <th>Nama</th>
                                                 <th>Phone</th>
                                                 <th>Email</th>
@@ -68,6 +71,7 @@
                                                 <tr>
                                                     <td>{{$loop->iteration}}</td>
                                                     <td>{{$tb->r_number}}</td>
+                                                    <td>{{$tb->instansi}}</td>
                                                     <td>{{$tb->name}}</td>
                                                     <td>{{$tb->phone}}</td>
                                                     <td>{{$tb->email}}</td>
@@ -84,6 +88,7 @@
                                             <thead>
                                                 <th>#</th>
                                                 <th>No Ruangan</th>
+                                                <th>Instansi</th>
                                                 <th>Nama</th>
                                                 <th>Phone</th>
                                                 <th>Email</th>
@@ -94,6 +99,7 @@
                                                 <tr>
                                                     <td>{{$loop->iteration}}</td>
                                                     <td>{{$tt->r_number}}</td>
+                                                    <td>{{$tt->instansi}}</td>
                                                     <td>{{$tt->name}}</td>
                                                     <td>{{$tt->phone}}</td>
                                                     <td>{{$tt->email}}</td>

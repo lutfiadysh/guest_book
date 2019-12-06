@@ -24,7 +24,14 @@ class ConfigController extends Controller
      */
     public function create()
     {
-        //
+        
+    }
+
+    public function appname()
+    {
+        $data = Config::all();
+
+        return view::share('data', $data);
     }
 
     /**
@@ -35,7 +42,7 @@ class ConfigController extends Controller
      */
     public function store(Request $request)
     {
-        $data = Config::where('id',1)->update($request->except('_token'));
+        $data = Config::where('id',3)->update(['app_name' => $request->app_name]);
 
         return redirect()->route('config')->withMessage(__('Data Successfully Updated!'));
     }

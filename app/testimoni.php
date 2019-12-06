@@ -8,5 +8,5 @@ class testimoni extends Model
 {
     protected $table = 'testimoni';
 
-    protected $fillable = ['r_number','name','phone','email','testimoni'];
+    protected $fillable = ['r_number','name','instansi','phone','email','testimoni'];
 }
