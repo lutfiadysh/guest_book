@@ -7,8 +7,8 @@
         <div class="row mt-5">
             <div class="col-xl-12 mb-5 mb-xl-0">
                 <div class="card shadow mb-7">
-                    <div class="card-header border-0">
-                        <h3 class="mb-0 float-left">Data testimoni</h3>
+                    <div class="card-header border-0 bg-gradient-warning">
+                        <h3 class="mb-0 float-left text-white">Data testimoni</h3>
                     </div>
                     <div class="nav-wrapper row justify-content-center">
                         <ul class="nav nav-pills nav-fill flex-column flex-md-row col-10" id="tabs-icons-text" role="tablist">
@@ -27,7 +27,7 @@
                         <div class="card-body">
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
-                                    <p class="description">
+                                    <div class="description table-responsive">
                                         <table class="table table-bordered">
                                             <thead>
                                                 <th>#</th>
@@ -50,10 +50,10 @@
                                                 @endforeach
                                             </tbody>
                                         </table>
-                                    </p>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-                                    <p class="description">
+                                    <div class="description table-responsive">
                                         <table class="table table-bordered">
                                             <thead>
                                                 <th>#</th>
@@ -76,10 +76,10 @@
                                                 @endforeach
                                             </tbody>
                                         </table>
-                                    </p>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
-                                    <p class="description">
+                                    <div class="description table-responsive">
                                         <table class="table table-bordered">
                                             <thead>
                                                 <th>#</th>
@@ -110,7 +110,6 @@
                 </div>
             </div>
         </div>
-
         @include('layouts.footers.auth')
     </div>
 @endsection

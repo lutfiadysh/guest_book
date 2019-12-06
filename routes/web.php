@@ -28,5 +28,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 	Route::get('/data','TestiController@index')->name('data');
+	Route::get('/config','ConfigController@index')->name('config');
+	Route::post('/config/save','ConfigController@store')->name('store');
 });
 

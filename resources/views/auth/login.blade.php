@@ -1,14 +1,14 @@
-@extends('layouts.app', ['class' => 'bg-gradient-success'])
+@extends('layouts.app', ['class' => 'bg-gradient-default'])
 
 @section('content')
-    @include('layouts.headers.guest')
-
-    <div class="container mt--8 pb-5">
+    <div class="" style="background-image: url(../argon/img/theme/skul.jpg); background-size: cover; background-position: center top;">
+    <span class="mask bg-gradient-default opacity-7"></span>
+    <div class="container pb-7 pt-7">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-7">
-                <div class="card bg-secondary shadow border-0">
+                <div class="card bg-secondary shadow border-0 mt-6 mb-5">
                     <div class="card-header bg-transparent pb-5">
-                        <div class="text-muted text-center mt-2 mb-3"><small>{{ __('Sign in with') }}</small></div>
+                        <div class="text-muted text-center mt-2 mb-3"><small>{{ __('Admin Login') }}</small></div>
                     </div>
                     <div class="card-body px-lg-5 py-lg-5">
                         <form role="form" method="POST" action="{{ route('login') }}">
@@ -32,7 +32,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                                     </div>
-                                    <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="{{ __('Password') }}" type="password" value="secret" required>
+                                    <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="{{ __('Password') }}" type="password" required>
                                 </div>
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback" style="display: block;" role="alert">
@@ -54,5 +54,6 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 @endsection
