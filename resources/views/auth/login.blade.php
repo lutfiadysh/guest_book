@@ -1,7 +1,7 @@
 @extends('layouts.app', ['class' => 'bg-gradient-default'])
 
 @section('content')
-    <div class="" style="background-image: url(../argon/img/theme/skul.jpg); background-size: cover; background-position: center top;">
+    <div class="" style="background-image: url({{asset('argon/img/theme/skul.jpg')}}); background-size: cover; background-position: center top;">
     <span class="mask bg-gradient-default opacity-7"></span>
     <div class="container pb-7 pt-7">
         <div class="row justify-content-center">
